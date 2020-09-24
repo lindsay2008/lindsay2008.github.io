@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Rogers Aframe Project </title>
+    <meta name="description" content="LMC 2700 A-frame Project 2">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> </script>
+  </head>
+  
+  <body>
+    <a-scene>
+        <a-sky src="https://img.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-324.jpg?size=626&ext=jpg"></a-sky>
+        <a-camera position="0 -5 25"></a-camera>
+        <a-sphere
+          id="moon"
+          src="MoonTexture.jpg"
+          radius= "10" 
+          segments: "36"
+          position="3 18 -25">
+        </a-sphere>
+   
+        
+        <a-triangle
+          id="backTriangle"
+          src="grayTriangle.jpg"
+          color= silver
+          vertex-a="-7 -10 -5"
+          vertex-b= "7 -10 -5"
+          vertex-c="0 5 -5">
+        </a-triangle>
+                    
+        <a-triangle
+          id="frontGray"
+          src="whiteTri.jpg"
+          color=silver
+          vertex-a="-8 -10 -2.25"
+          vertex-b= "1 -10 -2.25"
+          vertex-c="-3.5 0.5 -2.25">
+        </a-triangle>
+        
+        <a-triangle
+          id="whiteTriangle"
+          src="whiteTri.jpg"
+          vertex-a="-7 -10 -3"
+          vertex-b= "2 -10 -3"
+          vertex-c="-2.5 0.5 -3">
+        </a-triangle>
+        
+         <a-triangle
+          id="bigBlackTriangle"
+          src="copperText.jpg"
+          color="#36423b"
+          vertex-a="-14 -10 -4"
+          vertex-b="0 -10 -4"
+          vertex-c="-7 0.5 -4">
+          opacity="-1"
+        </a-triangle>
+        
+        <a-triangle
+          id="copperTriangle"
+          src="copperText.jpg"
+          color= copper
+          opacity= "3"
+          vertex-a="0 -10 -2"
+          vertex-b= "10 -10 -2"
+          vertex-c="4.5 0.5 -2">
+        </a-triangle>
+        
+        <a-cone 
+                id="blackCone"
+                src="copperText.jpg"
+                color="#36423b"
+                position="2 -10 -2"
+                radius-bottom= "5" 
+                height= "8.5"
+                metalness = "2"
+                radius-top: "0.1">
+        </a-cone>
+        
+        <a-cone 
+                id="whiteCone"
+                src="whiteTri.jpg"
+                color="#e2eae0"
+                position="-7.5 -9 -2.15"
+                radius-bottom= "4.75" 
+                height= "8.5"
+                radius-top: "0.1">
+        </a-cone>
+        
+        <a-cone 
+                id="transparentCone"
+                src="whiteTri.jpg"
+                color="#d0ecdd"
+                position="-4 -9.80 -1"
+                radius-bottom= "4.75" 
+                height= "9"
+                transparent=true
+                radius-top: "0.1">
+        </a-cone>
+        
+        <a-cone 
+                id="goldCone"
+                src="whiteTri.jpg"
+                color="#ead885"
+                position="-8.5 -11.2 4.1"
+                radius-bottom= "4" 
+                height= "6"
+                radius-top: "0.1">
+        </a-cone>
+
+        
+    </a-scene>
+  </body>
+</html>
